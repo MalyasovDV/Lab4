@@ -7,8 +7,9 @@ def find_simple_multipliers(number):
         for i in range (2, int(number + 1)):
             if (number % i == 0):
                 multiplier.append(i)
-                number //= i
+                number /= i
                 break
     return multiplier
 
-print(find_simple_multipliers(20))
+number = 20
+print(number, find_simple_multipliers(number))
